@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*body {background-color: rgb(166, 189, 197);} 
+*/
+.main_wrapper {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    /*background-color:rgba(255, 255, 255, 0);
+    min-height: 679px;*/
+}
+    #navbar {
+        /*position: fixed;*/
+        width: 100%;
+        height: 50px;
+        border-radius:0px;
+        background-color:rgb(129, 180, 149);
+    }
+    #navbar:hover {background-color:rgb(94, 155, 117);}
+
+    #menu {
+        padding:0;
+        line-height:36px;
+        margin-top:5px;
+        float:left;
+    }
+    #menu li{list-style-type: none; display: inline;}
+    #menu li a {
+        display: inline-block;
+        color:#fff;
+        text-decoration:none;
+        font-size:18px;
+        /* margin:0px; */
+        /* padding:10px; */
+        padding-left:10px;
+        padding-right:10px;
+        /* line-height:auto; */
+    }
+    #menu a.active {
+        background-color: rgba(126, 219, 255, 0.521);
+        text-decoration:underline;
+        color:rgb(0, 0, 0);
+        font-weight:bolder;
+    }
+    #menu a:hover {
+        background-color: rgba(126, 219, 255, 0.521);
+        /* text-decoration:underline; */
+        color:rgb(0, 0, 0);
+        font-weight:bolder;
+    }
+    #form {
+        float:right;
+        line-height:50px;
+        padding-right:5px;
+    }
+    
+    .content_wrapper {
+        background:rgb(255, 255, 255);
+        align-content: center;
+        width: 100%;
+        height:100%;
+        min-height: 629px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    #right_content {
+        border-radius:20px;
+        width:100%;
+        height:100%;
+        overflow:scroll;overflow-x:hidden;overflow-y:scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    #right_content:hover {
+        background:rgb(238, 238, 238);
+    }
+
+        #headline {
+            height: 30px;
+            width: 100%;
+        }
+            #headline_content {
+                
+                border-radius:20px;
+                padding-left: 10px;
+                background: #000;
+                float: right;
+                color: #FFF;
+                line-height: 30px;
+                padding-right: 20px;
+            }
+
+        #products_box {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            width: 100%;
+            height:100%;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+        }
+        #single_product {
+            float: left; 
+            padding: 10px;
+            /* padding-left: 160px; */
+            /* padding-right: 145px; */
+            /* padding-top: 10px; */
+            /* padding-bottom: 20px; */
+        }
+            #single_product img {height: 200px; width:200px; border: 1px solid rgba(0, 0, 0, 0.315); border-radius: 10px;}
+
+    #left_sideber {
+        align-content: center;
+        border-radius:20px;
+        width:200px;
+        height:600px;
+        background:rgb(0, 78, 109);
+        float:left;
+        overflow:scroll;overflow-x:hidden;overflow-y:scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+        #sidebar_title {
+            border-radius:30px;
+            background:rgba(255, 251, 0, 0.281);
+            color:rgb(251, 255, 0);
+            padding:10px;
+            text-align: center;
+            font-size:22px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+            #cats {color:rgb(255, 255, 255);text-align: center;}
+            #cats li {list-style: none; margin: 10px;}
+            #cats a {color:#FFF;font-size: 20px;text-decoration: none; margin: 5px;}
+            #cats a:hover {color:#f93; text-decoration: underline; font-weight: bolder;}
+
+    .fotter {
+        text-align: center; 
+        width:100%;
+        height:70px;
+        color: #FFF;
+        border-radius:0px;
+        background:rgba(0, 0, 0, 0.863);
+        clear: both;
+    }
+
+#likePro{
+    clear: both;
+    width:220;
+    height: 220px;
+    overflow:scroll;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    scrollbar-width: 10px;
+    -ms-overflow-style: initial;
+}
+
+#like_product {float: left; padding-left: 160px;padding-right: 145px;padding-top: 10px;padding-bottom: 20px;}
+#like_product {float: left; padding:50px;}
+#like_product img {height: 100px; width:100px; border: 1px solid rgba(0, 0, 0, 0.315); border-radius: 20px;}
